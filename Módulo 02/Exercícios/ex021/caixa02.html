@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(185, 242, 245);
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(102, 151, 153);
+            padding:  10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.534);
+            text-decoration: none;
+            text-align: left;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.103);
+
+        }
+        main {
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: rgb(8, 67, 145);
+        }
+        article {
+            text-align: justify;
+        }
+
+        article > aside {
+            background-color: darkcyan;
+            border: 0px;
+        }
+        footer{
+            background-color: black;
+            margin: 0px;
+            color: aliceblue;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Meu site</h1>
+        <nav>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="assuntos">
+            <article>
+                <h2>Esportes</h2>
+                <h3>Esportes no Brasil</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, architecto, repellendus excepturi reprehenderit amet minima incidunt doloremque nulla iste quam dolorum adipisci saepe optio rerum! Ratione nulla unde ullam odio?</p>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <article>
+                <h3>Notícia sobre o Brasil.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe id necessitatibus nulla excepturi quibusdam accusantium similique alias aspernatur, numquam iusto dolor perferendis optio possimus consequuntur cupiditate rerum magnam quidem!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo ____________</p>
+    </footer>
+
+</body>
+</html>
