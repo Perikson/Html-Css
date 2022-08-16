@@ -4,9 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* EFEITO ZEBRADO: 
+        pseudo classe - :nth-child(2n) - efeito de um em um
+        pseudo classe - :nth-child(odd) - celulas impares
+        pseudo classe - :nth-child(even) - celulas pares
+        */
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        thead, tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        td.direita {
+            text-align: right;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        CAPTION
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
 </body>
+    <Table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Acre (AC)</td>
+                <td class="direita">707125</td>
+            </tr>
+            <tr>
+                <td>Alagoas (AL)</td>
+                <td class="direita">3093994</td>
+            </tr>
+            <tr>
+                <td>Amapá (AP)</td>
+                <td class="direita">648553</td>
+            </tr>
+            <tr>
+                <td>Amazonas (AM)</td>
+                <td class="direita">3350773</td>
+            </tr>
+            <tr>
+                <td>Bahia (BA)</td>
+                <td class="direita">13633969</td>
+            </tr>
+            <tr>
+                <td>Ceará (CE)</td>
+                <td class="direita">8180087</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal (DF)</td>
+                <td class="direita">2469489</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo (ES)</td>
+                <td class="direita">3392775</td>
+            </tr>
+            <tr>
+                <td>Goiás (GO)</td>
+                <td class="direita">5849105</td>
+            </tr>
+            <tr>
+                <td>Maranhão (MA)</td>
+                <td class="direita">6424340</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso (MT)</td>
+                <td class="direita">3033991</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul (MS)</td>
+                <td class="direita">2404256</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais (MG</td>
+                <td class="direita">19159260</td>
+            </tr>
+            <tr>
+                <td>Pará (PA)</td>
+                <td class="direita">7443904</td>
+            </tr>
+            <tr>
+                <td>Paraíba (PB)</td>
+                <td class="direita">3753633</td>
+            </tr>
+            <tr>
+                <td>Paraná (PR)</td>
+                <td class="direita">10266737</td>
+            </tr>
+            <tr>
+                <td>Pernambuco (PE)</td>
+                <td class="direita" class="direita">8541250</td>
+            </tr>
+            <tr>
+                <td>Piauí (PI)</td>
+                <td class="direita" class="direita">3086448</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro (RJ)</td>
+                <td class="direita" class="direita">15180636</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte (RN)</td>
+                <td class="direita" class="direita">3121451</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul (RS)</td>
+                <td class="direita" class="direita">10576758</td>
+            </tr>
+            <tr>
+                <td>Rondônia (RO)</td>
+                <td class="direita" class="direita">1535625</td>
+            </tr>
+            <tr>
+                <td>Roraima (RR)</td>
+                <td class="direita" class="direita">425398</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina (SC)</td>
+                <td class="direita" class="direita">6178603</td>
+            </tr>
+            <tr>
+                <td>São Paulo (SP)</td>
+                <td class="direita" class="direita">39924091</td>
+            </tr>
+            <tr>
+                <td>Sergipe (SE)	</td>
+                <td class="direita">2036277</td>
+            </tr>
+            <tr>
+                <td>Tocantins (TO)</td>
+                <td class="direita">1373551</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">total de habitantes</th>
+            <td class="direita">399846513684</td>
+        </tfoot>
+    </Table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi, libero deleniti in illum itaque reiciendis, eaque laborum quibusdam soluta pariatur voluptas repellendus modi quidem et, dolore porro incidunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit at enim eveniet dolores repellendus officia sit, neque nulla doloremque aperiam eum mollitia. Ad saepe rerum excepturi, aliquid molestias reprehenderit.</p>
 </html>
