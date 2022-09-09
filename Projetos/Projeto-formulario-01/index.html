@@ -11,59 +11,60 @@
     
     <div>
         <h1>Cadastro</h1>
-        <p>Complete suas informações</p>
+        <h2 id="subtitulo">Complete suas informações</h2>
     </div>
 
     <div>
         <form action="">
 
-            <fieldset>
-                <legend>Informações Pessoais</legend>
-                <div>
+            <fieldset class="grupo">
+                <legend><strong>Informações Pessoais</strong></legend>
+                <div class="campo">
                     <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="sobrenome">Sobrenome: </label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome"  required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email"  required>
+                </div>
+            </fieldset>
+           
+            <fieldset>
+                <legend><strong>Informações do Desenvolvedor.</strong></legend>
+
+                <div class="campo">
+                    <label for="">De qual lado da aplicação você desenvolve?</label>
+                    <label for="frontend">
+                        <input type="radio" name="devweb" id="frontend">Front-end
+                    </label>
+                    <label for="backend">
+                        <input type="radio" name="devweb" id="backend">Back-end
+                    </label>
+                    <label for="fullstack">
+                        <input type="radio" name="devweb" id="fullstack">Full-stack
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="Senioridade">Senioridade: </label>
+                    <select name="Senioridade" id="Senioridade">
+                        <option value="">Selecione</option>
+                        <option value="">Junior</option>
+                        <option value="">Pleno</option>
+                        <option value="">Senior</option>
+                    </select>
                 </div>
             </fieldset>
 
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-            </div>
-
-            <div>
-                <label for="">De qual lado da aplicação você desenvolve?</label>
-
-                <label for="frontend">
-                    <input type="radio" name="devweb" id="frontend">Front-end
-                </label>
-
-                <label for="backend">
-                    <input type="radio" name="devweb" id="backend">Back-end
-                </label>
-
-                <label for="fullstack">
-                    <input type="radio" name="devweb" id="fullstack">Full-stack
-                </label>
-            </div>
-
-            <div>
-                <label for="Senioridade">Senioridade</label>
-                <select name="Senioridade" id="Senioridade">
-                    <option value="">Selecione</option>
-                    <option value="">Junior</option>
-                    <option value="">Pleno</option>
-                    <option value="">Senior</option>
-                </select>
-            </div>
-
-            <fieldset>
-                <legend>Selecione as tecnologias que Ulitiza</legend>
-                <div>
+            <fieldset class="grupo">
+                <legend><strong>Selecione as tecnologias que Ulitiza</strong></legend>
+                <div class="campo">
 
                     <input type="checkbox" name="tec1" id="tec1" value="HTML">
                     <label for="tec1">HTML</label>
@@ -88,12 +89,12 @@
                 </div>
             </fieldset>
 
-            <div>
-                <label for="xp">Conte um pouco da sua experiência:</label>
-                <textarea name="xp" id="xp" cols="30" rows="10" style="display: block;"></textarea>
+            <div class="textarea">
+                <label for="xp"><strong>Conte um pouco da sua experiência:</strong></label>
+                <textarea name="xp" id="xp" cols="50" rows="10" style="display: block;"></textarea>
             </div>
 
-            <input type="submit" value="Enviar">
+            <input class="botao" type="submit" value="Enviar">
         </form>
     </div>
 </body>

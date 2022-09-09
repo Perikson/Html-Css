@@ -1,2 +1,80 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+    background-color: #96E4F2;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #380B61;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+fieldset div, select {
+   margin-left: 5%;
+   margin-top: 5px;
+}
+
+input, select, textarea, button, fieldset {
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+label.campo {
+    margin-bottom: 1em;
+}
+
+legend {
+    padding: 5px;
+}
+
+div > label {
+    display: block;
+}
+
+div.textarea {
+    margin-top: 10px;
+}
+
+textarea {
+    margin: auto;
+    margin-top: 10px;
+}
+
+input.botao {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1em;
+}
