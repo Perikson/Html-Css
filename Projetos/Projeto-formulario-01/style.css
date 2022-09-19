@@ -20,24 +20,24 @@ body {
     width: 400px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px ;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
-    background-color: #96E4F2;
+    background-color: #96e4f279;
     font-size: 1em;
 }
 
 h1 {
     font-family: sans-serif;
-    color: #380B61;
     text-align: center;
     margin-bottom: 10px;
 }
 
 #subtitulo {
     font-family: sans-serif;
-    color: #380B61;
+    color: #246570;
     margin-left: 10%;
     margin-bottom: 10px;
 }
@@ -59,6 +59,7 @@ input, select, textarea, button, fieldset {
 
 .campo {
     margin-bottom: 1em;
+    float: left;
 }
 
 label.campo {
