@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(53, 190, 253);
+    background-color: rgb(109, 126, 134);
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 }
 
 section {
-    background-color: white;
+    background-color: rgb(92, 88, 88);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -22,10 +22,15 @@ div {
     text-align: center;
 }
 
+#msg {
+    font-weight: bolder;
+    color: white;
+}
+
 #imagem {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
     border-radius: 50%;
 }
 
